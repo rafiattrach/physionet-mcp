@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "physionet-mcp"
-version = "0.0.1"
+version = "0.0.2"
 description = "Lean BigQuery-only MCP server for PhysioNet datasets"
 readme = "README.md"
 license = "MIT"
@@ -36,7 +36,7 @@ dependencies = [
 ]
 
 [project.scripts]
-physionet-mcp-server = "physionet_mcp.mcp_server:main"
+physionet-mcp = "physionet_mcp.mcp_server:main"
 
 [project.urls]
 Homepage = "https://github.com/rafiattrach/physionet-mcp"

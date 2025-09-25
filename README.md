@@ -6,7 +6,7 @@ Lean MCP server for PhysioNet datasets - works with any PhysioNet dataset you ha
 
 ## Quick Setup
 
-### Production (After PyPI release)
+### Production
 ```json
 {
   "mcpServers": {
