@@ -4,6 +4,28 @@ Lean MCP server for PhysioNet datasets - works with any PhysioNet dataset you ha
 
 📺 **This is a lean version of m3 with similar BigQuery and PhysioNet setup. Check out detailed videos here:** [https://rafiattrach.github.io/m3/](https://rafiattrach.github.io/m3/)
 
+## Install uv (required for `uvx`)
+
+We use `uvx` to run the MCP server. Install `uv` from the official installer, then verify with `uv --version`.
+
+- macOS and Linux
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+- Windows (PowerShell)
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Verify installation:
+
+```bash
+uv --version
+```
+
 ## Quick Setup
 
 ### Production
