@@ -26,7 +26,28 @@ Verify installation:
 uv --version
 ```
 
+## BigQuery authentication (CLI)
+
+1. Install Google Cloud SDK:
+   - macOS (Homebrew): `brew install google-cloud-sdk`
+   - Windows/Linux: see the installer at `https://cloud.google.com/sdk/docs/install`
+2. Authenticate Application Default Credentials (ADC):
+
+```bash
+gcloud auth application-default login
+```
+
+This will open your browser — choose the Google account that has access to your BigQuery project with PhysioNet data.
+
+3. Use your Google Cloud project ID in the MCP config (see Quick Setup). You can also export it in your shell:
+
+```bash
+export BIGQUERY_PROJECT_ID=your-project-id
+```
+
 ## Quick Setup
+
+Paste the following into your MCP client configuration, then restart your client.
 
 ### Production
 ```json
@@ -59,7 +80,7 @@ uv --version
 }
 ```
 
-Replace `your-project-id` with your Google Cloud project ID.
+Replace `your-project-id` with your Google Cloud project ID. 
 
 ## 4 Simple Tools
 
