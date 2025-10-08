@@ -30,9 +30,18 @@ classifiers = [
 dependencies = [
     "fastmcp>=0.1.0",
     "google-cloud-bigquery>=3.0.0",
-    "db-dtypes>=1.0.0", 
+    "db-dtypes>=1.0.0",
     "pandas>=2.0.0",
     "sqlparse>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "pre-commit>=3.0.0",
+    "ruff>=0.1.0",
 ]
 
 [project.scripts]
